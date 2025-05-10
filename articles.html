@@ -61,68 +61,100 @@
   
   <body>
   
-<!-- ✅ NAVIGATION -->
+<body>
+ <!-- ✅ NAVIGATION -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">SmarterPayouts</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricingcalculator.html">Early Payout Calculator</a></li>
+        <li class="nav-item">
+         <a class="nav-link " aria-current="page" href="home.html">Home</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricingcalculator.html">Early Payout Calculator</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-success fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+          <a class="nav-link dropdown-toggle" href="#" id="processDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Our Process
           </a>
-          <ul class="dropdown-menu show">
+          <ul class="dropdown-menu" aria-labelledby="processDropdown">
             <li><a class="dropdown-item" href="getaquote.html">Get A Quote</a></li>
             <li><a class="dropdown-item" href="reviewoffer.html">Review Offer</a></li>
             <li><a class="dropdown-item" href="court-approval-process.html">Court Approval</a></li>
-            <li>
-              <a class="dropdown-item active text-success fw-bold" aria-current="page" href="getyourcash.html">
-                Get Your Cash
-              </a>
-            </li>
+            <li><a class="dropdown-item" href="getyourcash.html">Get Your Cash</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="articles.html">Articles</a>
+           <li class="nav-item">
+          <a class="nav-link active text-success fw-bold" href="articles.html">Articles</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link " href="about.html">About Us</a>
+        </li>
           <li class="nav-item">
           <a class="nav-link " href="faqs.html">FAQs</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+     
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+<main>
+  <section class="container py-5">
+    <h1 class="fw-bold mb-4 text-center text-success">SmarterPayouts Blog</h1>
+    <p class="lead text-muted text-center mb-5">
+      Expert advice, financial insights, and structured settlement tips — all in one place.
+    </p>
 
-  
-  
-<!-- ✅ GET YOUR CASH (Simple Transfer Options) -->
-<section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-3">Get Your Cash — Your Way</h2>
-      <p class="text-muted mb-4">
-        Once your transfer is approved by the court, receiving your money is fast and simple.
-      </p>
-  
-      <div class="row justify-content-center text-start">
-        <div class="col-md-8">
-          <p class="mb-3"><strong>🏦 Direct Deposit:</strong> You can securely fill out a direct deposit form via DocuSign. This is the fastest option.</p>
-          <p class="mb-3"><strong>✉️ Paper Check:</strong> Prefer a physical check? We can mail it directly to your home.</p>
-          <p class="mb-3"><strong>🤝 In-Person Delivery:</strong> In some cases, our funding partner can arrange personal delivery — just ask.</p>
-          <p class="mb-0 text-success fw-semibold">No delays. No hidden fees. Just your money — your way.</p>
-        </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- BLOG CARD 1 -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+          <img src="images/blog1.jpg" class="card-img-top" alt="Structured Settlements Explained" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Structured Settlements Explained</h5>
+            <p class="card-text">Understand how structured settlements work, their benefits, and key decisions before cashing out.</p>
+            <a href="blog/structured-settlements-explained.html" class="btn btn-outline-success btn-sm">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- BLOG CARD 2 -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+          <img src="images/blog2.jpg" class="card-img-top" alt="Should You Sell Your Settlement?" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Should You Sell Your Structured Settlement?</h5>
+            <p class="card-text">Explore when it’s smart to sell your payments and what you should watch out for in the process.</p>
+            <a href="blog/should-you-sell-structured-settlement.html" class="btn btn-outline-success btn-sm">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- BLOG CARD 3 (Sample Add-On) -->
+      <div class="col">
+        <article class="card h-100 border-0 shadow-sm">
+          <img src="images/blog3.jpg" class="card-img-top" alt="How Fast Is a Settlement Payout?" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">How Fast Is a Settlement Payout?</h5>
+            <p class="card-text">Learn how long it typically takes to receive your payout and how SmarterPayouts speeds up the process.</p>
+            <a href="blog/how-fast-is-settlement-payout.html" class="btn btn-outline-success btn-sm">Read More</a>
+          </div>
+        </article>
       </div>
     </div>
-    
-   
   </section>
-  
+</main>
+
+
 
      <div class="hero-buttons">
      <a href="pricingcalculator.html" class="cta-button primary">Get Your Instant Offer</a>
@@ -158,7 +190,6 @@
       </a>
     </div>
   </div>
-  
   
   <!-- ✅ SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,96 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    <title>SmarterPayouts | Self-Quote Your Structured Settlement</title>
-    <meta name="description" content="Get an instant quote on your structured settlement. No credit checks. No sensitive data. Court-approved and secure." />
-    <meta name="keywords" content="structured settlement, annuity quote, cash payout, court approved settlement, instant quote" />
-    <meta name="author" content="SmarterPayouts" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#09B44D" />
-  
-    <!-- ✅ Favicon & Web Manifest -->
-    <link rel="icon" href="assets/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  
-    <!-- ✅ Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  
-    <!-- ✅ Styles & Scripts -->
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="scripts.js"></script>
-  
-    <!-- ✅ Open Graph (Facebook/LinkedIn) -->
-    <meta property="og:title" content="SmarterPayouts | Structured Settlement Experts" />
-    <meta property="og:description" content="Quote and cash out your structured settlement fast — no sensitive info required. Court-approved and secure." />
-    <meta property="og:image" content="assets/preview.jpg" />
-    <meta property="og:url" content="https://smarterpayouts.com/" />
-    <meta property="og:type" content="website" />
-  
-    <!-- ✅ Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SmarterPayouts" />
-    <meta name="twitter:description" content="Self-quote your structured settlement and get paid fast." />
-    <meta name="twitter:image" content="assets/preview.jpg" />
-  
-    <!-- ✅ Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "SmarterPayouts",
-      "url": "https://smarterpayouts.com",
-      "logo": "https://smarterpayouts.com/assets/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-800-555-1234",
-        "contactType": "Customer Support",
-        "areaServed": "US",
-        "availableLanguage": "English"
-      },
-      "sameAs": [
-        "https://facebook.com/SmarterPayouts",
-        "https://twitter.com/SmarterPayouts",
-        "https://linkedin.com/company/smarterpayouts"
-      ]
-    }
-    </script>
-  </head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmarterPayouts | Self-Quote Your Structured Settlement</title>
+  <meta name="description" content="Get an instant quote on your structured settlement. No credit checks. No sensitive data. Court-approved and secure." />
+  <meta name="keywords" content="structured settlement, annuity quote, cash payout, court approved settlement, instant quote" />
+  <meta name="author" content="SmarterPayouts" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#09B44D" />
+
+  <!-- ✅ Favicon & Web Manifest -->
+  <link rel="icon" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- ✅ Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ OG / Twitter -->
+  <meta property="og:title" content="SmarterPayouts | Structured Settlement Experts" />
+  <meta property="og:description" content="Quote and cash out your structured settlement fast — no sensitive info required. Court-approved and secure." />
+  <meta property="og:image" content="assets/preview.jpg" />
+  <meta property="og:url" content="https://smarterpayouts.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SmarterPayouts" />
+  <meta name="twitter:description" content="Self-quote your structured settlement and get paid fast." />
+  <meta name="twitter:image" content="assets/preview.jpg" />
+
+  <!-- ✅ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SmarterPayouts",
+    "url": "https://smarterpayouts.com",
+    "logo": "https://smarterpayouts.com/assets/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-555-1234",
+      "contactType": "Customer Support",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://facebook.com/SmarterPayouts",
+      "https://twitter.com/SmarterPayouts",
+      "https://linkedin.com/company/smarterpayouts"
+    ]
+  }
+  </script>
+
+  <!-- ✅ Animation CSS -->
+  <style>
+ .pulse-effect {
+  animation: pulse 3s infinite; /* 🔁 Slower beat */
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+  </style>
+</head>
 
 <body>
 
-<!-- ✅ HERO SECTION -->
-<section class="hero">
-  <video autoplay muted loop playsinline preload="auto" id="bg-video">
-    <source src="images/counting cash .mp4" type="video/mp4" />
-    <img src="assets/fallback.jpg" alt="Preview fallback" />
-  </video>
+  <!-- ✅ HERO SECTION -->
+  <section class="hero">
+    <video autoplay muted loop playsinline preload="metadata" id="bg-video">
+      <source src="images/counting cash .mp4" type="video/mp4" />
+      <img src="assets/fallback.jpg" alt="Structured Settlement Video Preview" />
+    </video>
 
-  <div class="overlay"></div>
+    <div class="overlay"></div>
 
-  <div class="hero-content text-center">
-    <h1 class="fw-bold">Self-Price Your Structured Settlement</h1>
-  <p class="lead fs-4 fw-semibold text-dark">
-  Instantly see your Early Payout Offer — no pressure, no phone calls, no personal data required.
-</p>
-<p class="fs-5 text-muted">
-  SmarterPayouts is the first fully online quote tool for structured settlements — secure, private, and built entirely on your terms.
-</p>
+    <div class="hero-content text-center">
+      <h1 id="pulseText" class="fw-bold text-white display-5">Skip the Sales Pitch</h1>
 
-<div class="hero-buttons mt-4">
-      <a href="home.html" class="cta-button secondary">How It Works</a>
-      <a href="pricingcalculator.html" class="cta-button primary">Get Your Instant Offer</a>
+      <p class="lead fs-4 fw-semibold text-light mt-3">
+        <h3>Discover the real value of your future payments — instantly. No pressure. No salespeople. No personal data required.</h3>
+      </p>
+      Industry's first 100% online pricing for life and guaranteed settlement payments.
+      <p class="fs-5 text-light">
+    
+      </p>
+
+      <div class="hero-buttons mt-4">
+        <a href="home.html" class="cta-button secondary">How Our Process Works</a>
+        <a href="pricingcalculator.html" class="cta-button primary">Our Early Payout Calculator</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- ✅ FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2025 SmarterPayouts.com | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+  <!-- ✅ SLIM FOOTER -->
+  <footer class="footer text-center bg-dark text-white py-3">
+    <div class="container">
+      <p class="mb-1 small">&copy; 2025 SmarterPayouts.com</p>
+      <p class="mb-1">
+        <a href="privacy.html" class="text-warning text-decoration-none me-3 small">Privacy</a> | 
+        <a href="terms.html" class="text-warning text-decoration-none small">Terms</a> | 
+        <a href="articles.html" class="text-warning text-decoration-none me-3 small">Articles</a> | 
+        <a href="faqs.html" class="text-warning text-decoration-none small">FAQs</a>
+      </p>
+    </div>
   </footer>
+
+  <!-- ✅ JavaScript Pulse Effect -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("pulseText").classList.add("pulse-effect");
+    });
+  </script>
 
 </body>
 </html>

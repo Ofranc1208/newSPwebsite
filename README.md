@@ -1,34 +1,99 @@
 # SmarterPayouts Website
 
-Self-quote structured settlements with fast, court-approved technology.  
-Built with HTML, CSS, JavaScript – mobile-first, SEO-ready, and optimized for GitHub Pages.
+**SmarterPayouts** is a modern, mobile-first website for users to self-quote their structured settlements — with no sales pressure, no personal data, and full court approval.
 
-## Live Demo
-
-Coming soon at: https://yourusername.github.io/smarterpayouts/
-
-## Folder Structure
-
-- `index.html` – Landing page
-- `style.css` – Global styles
-- `scripts.js` – JS logic (video + CTA support)
-- `images/` – Video/image assets
-- `sitemap.xml` – Google & bot-friendly sitemap
-- `.nojekyll` – Required for GitHub Pages to serve folders properly
-
-## TODO
-
-- Add form logic to calculator
-- Implement blog and payout funnel
+Originally built with HTML/CSS/JS, this site is ready for **migration into React.js** for better scalability and performance.
 
 ---
 
-### ✅ Summary
+## 🚀 Live Demo
 
-You're 100% on track. The only thing left is to:
+[https://yourusername.github.io/smarterpayouts/](https://yourusername.github.io/smarterpayouts/)
 
-- Rename `counting cash.mp4` → `counting-cash.mp4`
-- Confirm your paths in `index.html`
-- Push to GitHub and test it live
+---
 
-Let me know if you'd like help with the GitHub Pages deployment step or want to move on to `home.html`!
+## 📁 Static HTML Structure
+
+/smarterpayouts
+├── index.html # Landing page w/ hero video
+├── home.html # 4-step process overview
+├── pricingcalculator.html # External tool redirect
+├── contactus.html # Contact form and support info
+├── about.html # Company values and team
+├── articles.html # Blog index
+├── blog/
+│ ├── structured-settlements-explained.html
+│ ├── should-you-sell-structured-settlement.html
+│ └── how-fast-is-settlement-payout.html
+├── faqs.html # FAQ with schema markup
+├── style.css # Global styles
+├── scripts.js # Counters, effects
+├── images/ # Visual assets
+├── assets/ # Favicon, preview images
+├── sitemap.xml # SEO sitemap
+└── .nojekyll # Required for GitHub Pages
+
+---
+
+## ⚛️ React Migration Plan
+
+### ✅ Dev Setup
+
+```bash
+npx create-react-app smarterpayouts
+cd smarterpayouts
+npm install react-router-dom bootstrap react-helmet
+/src
+├── assets/               # Static images, videos, icons
+├── components/           # Navbar, Footer, Hero, BlogCard, FAQAccordion, etc.
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── FAQs.jsx
+│   ├── Articles.jsx
+│   └── BlogPost.jsx
+├── App.js
+└── index.js
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/faqs" element={<FAQs />} />
+  <Route path="/articles" element={<Articles />} />
+  <Route path="/blog/:slug" element={<BlogPost />} />
+</Routes>
+SEO, Schema & Meta
+SEO titles, descriptions, and OG/Twitter meta tags (via react-helmet)
+
+Blog posts should use <article> with proper headings
+
+Add FAQPage and BlogPosting schema using <script type="application/ld+json"> in pages
+
+📌 Features to Migrate
+✅ Hero video section (auto-play, muted, fallback)
+
+✅ Stats counters (useEffect timers)
+
+✅ FAQ accordion (Bootstrap or native)
+
+✅ Blog cards with links to full articles
+
+✅ Floating contact speed dial (optional)
+
+📬 Contact
+Email: support@smarterpayouts.com
+
+Phone: +1 (561) 583-1280
+
+Location: Delray Beach, FL
+
+✅ Deployment Notes
+For static deployment: use GitHub Pages (gh-pages) or Vite for React
+
+For production: Netlify or Vercel is recommended
+
+Use .env files for API keys or form handling services (like Formspree or Netlify Forms)
+
+If you want this as a file attachment (`README.md`) ready to upload or commit, I can generate and send it to you directly. Want that?
+```

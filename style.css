@@ -184,67 +184,7 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
   }
   
-/* ✅ Ticker Auto-Scroll Animation */
-.ticker-section {
-    background-color: var(--color-light);
-    padding: 0.5rem 0;
-    overflow: hidden;
-  }
-  
-  .ticker-heading {
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #666;
-    text-align: center;
-    margin-bottom: 0.25rem;
-  }
-  
-  /* Outer wrapper with hidden overflow */
-  .ticker-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Actual scrolling logos container */
-  .ticker-logos {
-    display: flex;
-    gap: 2rem;
-    animation: tickerScroll 30s linear infinite;
-    white-space: nowrap;
-  }
-  
-  .ticker-logo {
-    height: 28px;
-    max-width: 80px;
-    object-fit: contain;
-    flex-shrink: 0;
-    transition: transform 0.2s ease;
-  }
-  
-  .ticker-logo:hover {
-    transform: scale(1.05);
-  }
-  
-  @media (min-width: 768px) {
-    .ticker-logo {
-      height: 36px;
-      max-width: 90px;
-    }
-  }
-  
-  /* Scrolling animation keyframes */
-  @keyframes tickerScroll {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  
+
   
   /* ================================================
      TESTIMONIAL CARDS
