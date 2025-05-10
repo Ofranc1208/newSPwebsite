@@ -8,30 +8,34 @@ Originally built with HTML/CSS/JS, this site is ready for **migration into React
 
 ## 🚀 Live Demo
 
-[https://yourusername.github.io/smarterpayouts/](https://yourusername.github.io/smarterpayouts/)
+[https://ofranc1208.github.io/newSPwebsite/](https://ofranc1208.github.io/newSPwebsite/)
 
 ---
 
 ## 📁 Static HTML Structure
 
+```
 /smarterpayouts
-├── index.html # Landing page w/ hero video
-├── home.html # 4-step process overview
-├── pricingcalculator.html # External tool redirect
-├── contactus.html # Contact form and support info
-├── about.html # Company values and team
-├── articles.html # Blog index
+├── index.html                          # Landing page w/ hero video
+├── home.html                           # 4-step process overview
+├── pricingcalculator.html              # External tool redirect
+├── contactus.html                      # Contact form and support info
+├── about.html                          # Company values and team
+├── articles.html                       # Blog index
 ├── blog/
-│ ├── structured-settlements-explained.html
-│ ├── should-you-sell-structured-settlement.html
-│ └── how-fast-is-settlement-payout.html
-├── faqs.html # FAQ with schema markup
-├── style.css # Global styles
-├── scripts.js # Counters, effects
-├── images/ # Visual assets
-├── assets/ # Favicon, preview images
-├── sitemap.xml # SEO sitemap
-└── .nojekyll # Required for GitHub Pages
+│   ├── structured-settlements-explained.html
+│   ├── should-you-sell-structured-settlement.html
+│   └── how-fast-is-settlement-payout.html
+├── faqs.html                           # FAQ with schema markup
+├── privacy.html                        # Privacy Policy
+├── terms.html                          # Terms & Conditions
+├── style.css                           # Global styles
+├── scripts.js                          # Counters, effects
+├── images/                             # Visual assets
+├── assets/                             # Favicon, preview images
+├── sitemap.xml                         # SEO sitemap
+└── .nojekyll                           # Required for GitHub Pages
+```
 
 ---
 
@@ -43,9 +47,14 @@ Originally built with HTML/CSS/JS, this site is ready for **migration into React
 npx create-react-app smarterpayouts
 cd smarterpayouts
 npm install react-router-dom bootstrap react-helmet
+```
+
+### ✅ Suggested Folder Structure
+
+```
 /src
-├── assets/               # Static images, videos, icons
-├── components/           # Navbar, Footer, Hero, BlogCard, FAQAccordion, etc.
+├── assets/                 # Static images, videos, icons
+├── components/             # Navbar, Footer, Hero, BlogCard, FAQAccordion, etc.
 ├── pages/
 │   ├── Home.jsx
 │   ├── About.jsx
@@ -55,6 +64,11 @@ npm install react-router-dom bootstrap react-helmet
 │   └── BlogPost.jsx
 ├── App.js
 └── index.js
+```
+
+### ✅ Routing (React Router v6)
+
+```jsx
 <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/about" element={<About />} />
@@ -63,37 +77,39 @@ npm install react-router-dom bootstrap react-helmet
   <Route path="/articles" element={<Articles />} />
   <Route path="/blog/:slug" element={<BlogPost />} />
 </Routes>
-SEO, Schema & Meta
-SEO titles, descriptions, and OG/Twitter meta tags (via react-helmet)
-
-Blog posts should use <article> with proper headings
-
-Add FAQPage and BlogPosting schema using <script type="application/ld+json"> in pages
-
-📌 Features to Migrate
-✅ Hero video section (auto-play, muted, fallback)
-
-✅ Stats counters (useEffect timers)
-
-✅ FAQ accordion (Bootstrap or native)
-
-✅ Blog cards with links to full articles
-
-✅ Floating contact speed dial (optional)
-
-📬 Contact
-Email: support@smarterpayouts.com
-
-Phone: +1 (561) 583-1280
-
-Location: Delray Beach, FL
-
-✅ Deployment Notes
-For static deployment: use GitHub Pages (gh-pages) or Vite for React
-
-For production: Netlify or Vercel is recommended
-
-Use .env files for API keys or form handling services (like Formspree or Netlify Forms)
-
-If you want this as a file attachment (`README.md`) ready to upload or commit, I can generate and send it to you directly. Want that?
 ```
+
+### ✅ SEO & Metadata
+
+- Use `react-helmet` for dynamic SEO meta tags (title, description, OG, Twitter card).
+- Inject `FAQPage` and `BlogPosting` schema via `<script type="application/ld+json">`.
+
+---
+
+## 🧩 Features to Migrate
+
+- ✅ Hero video section with autoplay/fallback
+- ✅ Animated stat counters (React `useEffect`)
+- ✅ FAQ accordion (Bootstrap or custom)
+- ✅ Blog card layout with internal navigation
+- ✅ Floating contact FAB (optional)
+
+---
+
+## 📬 Contact Info
+
+- **Email**: support@smarterpayouts.com  
+- **Phone**: +1 (561) 583-1280  
+- **Location**: Delray Beach, FL  
+
+---
+
+## ✅ Deployment Notes
+
+- Static deploy: GitHub Pages, Vite + gh-pages, or Surge
+- Production: Netlify or Vercel
+- Use `.env` for secure keys or form integrations like Netlify Forms or Formspree
+
+---
+
+> Let the developer know this site is structured cleanly and is ready for modular component conversion. All files are optimized for responsive layout and mobile-first delivery.
