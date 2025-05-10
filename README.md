@@ -98,9 +98,9 @@ npm install react-router-dom bootstrap react-helmet
 
 ## 📬 Contact Info
 
-- **Email**: support@smarterpayouts.com  
-- **Phone**: +1 (561) 583-1280  
-- **Location**: Delray Beach, FL  
+- **Email**: support@smarterpayouts.com
+- **Phone**: +1 (561) 583-1280
+- **Location**: Delray Beach, FL
 
 ---
 
